@@ -200,7 +200,7 @@ void checkCollision() {
         isGameOver = true;
 
         bool verticalSpeedSafe = std::abs(velocityY) <= 2.0f;
-        landedSuccessfully = (velocityX <= 2 && velocityY <= 2 && rocketAngle <= 10);
+        landedSuccessfully = (velocityX <= 2 && velocityY <= 2 && rocketAngle <= 10 && verticalSpeedSafe);
 
     }
 
